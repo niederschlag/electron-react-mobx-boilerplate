@@ -3,3 +3,7 @@ dist
 build
 .DS_Store
 *.log
+*.iml
+modules.xml
+.idea/
+*.ipr

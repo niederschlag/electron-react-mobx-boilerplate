@@ -1,4 +1,23 @@
 {
-  "presets": ["es2015", "stage-0", "react"],
-  "plugins": ["transform-decorators-legacy", "transform-runtime"]
+  "presets": ["env", "stage-3", "react"],
+  "plugins": ["transform-runtime"],
+  "env": {
+    "production": {
+      "plugins": [
+        "dev-expression"
+      ]
+    },
+    "development": {
+      "plugins": [
+        "transform-class-properties",
+        [
+          "flow-runtime",
+          {
+            "assert": true,
+            "annotate": true
+          }
+        ]
+      ]
+    }
+  }
 }
