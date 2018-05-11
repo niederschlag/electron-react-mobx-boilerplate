@@ -6,14 +6,14 @@ TODO:
 - [ ] Tear everything apart
 - [x] Tear Redux out
 - [ ] Again, check through all files and tear everything unnecessary out
-- [ ] Add Webpack
-- [ ] Add React hot reloading
+- [x] Add Webpack
+- [x] Add React hot reloading
 - [ ] Add Flow
 - [ ] Add proper linting
 - [x] Add MobX
 - [ ] Add developer plugins (React, MobX, Devtron)
 - [ ] Add Jest
-- [ ] Add Sass support (and CSS Modules support)
+- [x] Add Sass support (and CSS Modules support)
 - [ ] Set-up CI
 - [ ] Set-up auto dependency update (Greenkeeper / Renovate)
 - [ ] Set-up security management (Snyk)
