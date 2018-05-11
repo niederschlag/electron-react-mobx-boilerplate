@@ -1,6 +1,6 @@
 # electron-react-mobx-boilerplate
 
-## THIS PROJECT IS A BIIIIG WIP
+## THIS PROJECT IS WIP
 TODO:
 - [x] Clone project
 - [x] Tear everything apart
@@ -12,7 +12,7 @@ TODO:
 - [x] Add proper linting
 - [x] Add MobX
 - [ ] Add developer plugins (React, MobX, Devtron)
-- [ ] Add Jest
+- [ ] Add Jest / Enzyme
 - [x] Add Sass support (and CSS Modules support)
 - [ ] Set-up CI
 - [ ] Set-up auto dependency update (Greenkeeper / Renovate)

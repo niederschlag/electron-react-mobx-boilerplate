@@ -1,3 +1,4 @@
+const { default: installExtension, REACT_DEVELOPER_TOOLS, REACT_PERF, MOBX_DEVTOOLS } = require('electron-devtools-installer');
 const electron = require('electron');
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
@@ -7,8 +8,7 @@ const nodeEnv = process.env.NODE_ENV;
 
 app.on('ready', () => {
     if (nodeEnv === 'development') {
-        const sourceMapSupport = require('source-map-support');
-        sourceMapSupport.install();
+        installExtensions();
     }
     createWindow();
 });
@@ -25,6 +25,13 @@ app.on('activate', () => {
         createWindow();
     }
 });
+
+const installExtensions = () => {
+    require('devtron').install();
+    installExtension([REACT_DEVELOPER_TOOLS, REACT_PERF, MOBX_DEVTOOLS])
+        .then((name) => console.log(`Added Extension:  ${name}`))
+        .catch((err) => console.log('An error occurred: ', err));
+};
 
 function createWindow() {
     const { width, height } = electron.screen.getPrimaryDisplay().workAreaSize;
@@ -46,6 +53,5 @@ function createWindow() {
             protocol: 'file:',
             slashes: true
         }));
-	win.webContents.openDevTools();
     }
 }
