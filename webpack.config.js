@@ -35,7 +35,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    //new FlowBabelWebpackPlugin({warn: true}),
+    new FlowBabelWebpackPlugin({warn: true}),
   ],
 
   devServer: {
