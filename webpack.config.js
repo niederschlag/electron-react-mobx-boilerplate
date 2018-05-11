@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const FlowBabelWebpackPlugin = require('flow-babel-webpack-plugin');
 
 module.exports = {
   devtool:'source-map',
@@ -9,6 +10,7 @@ module.exports = {
     'webpack/hot/only-dev-server',
     './app/index'
   ],
+  mode: 'development',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -17,12 +19,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        use: ['babel-loader']
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+	use: [ 'babel-loader' ],
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        test: /\.scss$/,
+	exclude: /node_modules/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   },
@@ -31,6 +35,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
+    //new FlowBabelWebpackPlugin({warn: true}),
   ],
 
   devServer: {
