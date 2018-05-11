@@ -10,17 +10,19 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/static/'
+        publicPath: '/'
     },
     module: {
         rules: [
             {
                 test: /\.jsx?$/,
-                use: ['babel-loader']
+                use: ['babel-loader'],
+		exclude: /node_modules/
             },
             {
                 test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+		exclude: /node_modules/
             }
         ]
     },

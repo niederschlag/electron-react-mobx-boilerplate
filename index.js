@@ -46,5 +46,6 @@ function createWindow() {
             protocol: 'file:',
             slashes: true
         }));
+	win.webContents.openDevTools();
     }
 }

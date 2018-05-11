@@ -5,7 +5,6 @@ productName: electron-react-mobx-boilerplate
 asar: true
 
 directories:
-  buildResources: build-assets/
   output: build/
 
 files:
