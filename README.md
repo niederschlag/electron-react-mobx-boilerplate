@@ -4,14 +4,13 @@
 TODO:
 - [x] Clone project
 - [ ] Tear everything apart
-- [ ] Tear Redux out
-- [ ] Tear Babel out
+- [x] Tear Redux out
 - [ ] Again, check through all files and tear everything unnecessary out
 - [ ] Add Webpack
 - [ ] Add React hot reloading
 - [ ] Add Flow
 - [ ] Add proper linting
-- [ ] Add MobX
+- [x] Add MobX
 - [ ] Add developer plugins (React, MobX, Devtron)
 - [ ] Add Jest
 - [ ] Add Sass support (and CSS Modules support)
@@ -25,14 +24,8 @@ A minimal boilerplate to get started with [Electron](http://electron.atom.io/), 
 //TODO: Tear apart
 Including:
 
-* [React Router](https://reacttraining.com/react-router/)
-* [Redux Thunk](https://github.com/gaearon/redux-thunk/)
-* [Redux Actions](https://github.com/acdlite/redux-actions/)
-* [Redux Local Storage](https://github.com/elgerlambert/redux-localstorage/)
 * [Electron Packager](https://github.com/electron-userland/electron-packager)
 * [Electron DevTools Installer](https://github.com/MarshallOfSound/electron-devtools-installer)
-* [Electron Mocha](https://github.com/jprichardson/electron-mocha)
-* [Browsersync](https://browsersync.io/)
 
 ## Quick start
 
@@ -68,14 +61,7 @@ For a full list of options see: https://github.com/electron-userland/electron-bu
 
 Create a package for OSX, Windows and Linux
 ```
-yarn package
-```
-
-Or target a specific platform
-```
-yarn package:mac
-yarn package:win
-yarn package:linux
+yarn build
 ```
 
 ## Tests

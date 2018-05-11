@@ -1,17 +1,18 @@
-appId: com.example.app
-copyright: Example co
-productName: MyApp
+appId: com.example.electron-react-mobx-boilerplate
+copyright: Example Copyright
+productName: electron-react-mobx-boilerplate
 
 asar: true
 
 directories:
-  buildResources: dist-assets/
-  output: dist/
+  buildResources: build-assets/
+  output: build/
 
 files:
   - package.json
-  - init.js
-  - build/
+  - index.js
+  - dist/
+  - app/
   - node_modules/
 
 dmg:
@@ -30,8 +31,10 @@ mac:
 
 win:
   target: nsis
+  icon: resources/icon
 
 linux:
+  icon: resources
   target:
     - deb
     - AppImage

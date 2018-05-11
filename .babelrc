@@ -1,22 +1,19 @@
 {
-  "presets": ["env", "stage-3", "react"],
-  "plugins": ["transform-runtime"],
+  "presets": [
+    "es2015",
+    "stage-0",
+    "react"
+  ],
   "env": {
     "production": {
       "plugins": [
-        "dev-expression"
+        "transform-decorators-legacy"
       ]
     },
     "development": {
       "plugins": [
-        "transform-class-properties",
-        [
-          "flow-runtime",
-          {
-            "assert": true,
-            "annotate": true
-          }
-        ]
+        "transform-decorators-legacy",
+        "react-hot-loader/babel"
       ]
     }
   }
