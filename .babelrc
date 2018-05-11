@@ -1,12 +1,12 @@
 {
   "presets": [ "env", "stage-3", "react" ],
-  "plugins": [ "transform-decorators-legacy", "transform-class-properties", "transform-runtime"],
+  "plugins": [ "transform-decorators-legacy", "transform-class-properties", "transform-runtime", "transform-flow-strip-types" ],
   "env": {
     "production": {
-      "plugins": [ "transform-flow-strip-types" ]
+      "plugins": [ ]
     },
     "development": {
-      "plugins": [ "react-hot-loader/babel", "transform-flow-comments" ]
+      "plugins": [ "react-hot-loader/babel" ]
     }
   }
 }

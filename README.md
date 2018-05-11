@@ -3,13 +3,13 @@
 ## THIS PROJECT IS A BIIIIG WIP
 TODO:
 - [x] Clone project
-- [ ] Tear everything apart
+- [x] Tear everything apart
 - [x] Tear Redux out
 - [ ] Again, check through all files and tear everything unnecessary out
 - [x] Add Webpack
 - [x] Add React hot reloading
-- [ ] Add Flow
-- [ ] Add proper linting
+- [x] Add Flow
+- [x] Add proper linting
 - [x] Add MobX
 - [ ] Add developer plugins (React, MobX, Devtron)
 - [ ] Add Jest
