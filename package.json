@@ -10,9 +10,10 @@
         "dev": "concurrently -k \"yarn dev:serve\" \"yarn dev:electron\"",
         "dev:serve": "cross-env NODE_ENV=development webpack-dev-server",
         "dev:electron": "cross-env NODE_ENV=development electron index",
-        "build": "yarn private:clean && yarn build:dist && yarn build:all",
+        "build": "yarn private:clean && yarn build:dist && yarn build:wl",
         "build:dist": "cross-env NODE_ENV=production webpack --config webpack.production.config.js",
-        "build:all": "build -mwl",
+        "build:wl": "build -wl",
+        "build:m": "build -m",
         "private:clean": "yarn rimraf build"
     },
     "keywords": [
