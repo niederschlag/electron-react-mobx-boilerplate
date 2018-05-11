@@ -1,4 +1,4 @@
-const { default: installExtension, REACT_DEVELOPER_TOOLS, REACT_PERF, MOBX_DEVTOOLS } = require('electron-devtools-installer');
+const { default: installExtension, REACT_DEVELOPER_TOOLS, MOBX_DEVTOOLS } = require('electron-devtools-installer');
 const electron = require('electron');
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
@@ -28,7 +28,7 @@ app.on('activate', () => {
 
 const installExtensions = () => {
     require('devtron').install();
-    installExtension([REACT_DEVELOPER_TOOLS, REACT_PERF, MOBX_DEVTOOLS])
+    installExtension([REACT_DEVELOPER_TOOLS, MOBX_DEVTOOLS])
         .then((name) => console.log(`Added Extension:  ${name}`))
         .catch((err) => console.log('An error occurred: ', err));
 };
