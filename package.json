@@ -11,15 +11,15 @@
         "dev:serve": "cross-env NODE_ENV=development webpack-dev-server --hot",
         "dev:electron": "cross-env NODE_ENV=development electron index",
         "build": "yarn private:clean && yarn build:dist && yarn build:wl",
-	"build:dev": "yarn private:clean && yarn build:dist && yarn build:wl --dir",
-	"build:dev:l": "yarn private:clean && yarn build:dist && yarn build:l --dir",
-	"build:dev:w": "yarn private:clean && yarn build:dist && yarn build:w --dir",
+        "build:dev": "yarn private:clean && yarn build:dist && yarn build:wl --dir",
+        "build:dev:l": "yarn private:clean && yarn build:dist && yarn build:l --dir",
+        "build:dev:w": "yarn private:clean && yarn build:dist && yarn build:w --dir",
         "build:dist": "cross-env NODE_ENV=production webpack --config webpack.production.config.js",
         "build:wl": "build -wl",
-	"build:w": "build -w",
-	"build:l": "build -l",
+        "build:w": "build -w",
+        "build:l": "build -l",
         "build:m": "build -m",
-        "private:clean": "yarn rimraf build"
+        "private:clean": "yarn rimraf build dist"
     },
     "keywords": [
         "electron",

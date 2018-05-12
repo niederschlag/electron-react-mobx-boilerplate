@@ -18,7 +18,7 @@ class HomePage extends Component {
         return (
             <div className="">
                 This is the home page...
-		<br />
+                <br />
                 <Link to="/todo">Todo</Link>
             </div>
         );

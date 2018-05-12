@@ -15,11 +15,11 @@ class TodoPage extends React.Component {
     }
 
     addTodoEnter(e) {
-	if(e.key === 'Enter') {
-		const todo = this.refs.todo.value;
-		this.props.todo.addTodo(todo);
-		this.refs.todo.value = '';
-	}
+        if (e.key === 'Enter') {
+            const todo = this.refs.todo.value;
+            this.props.todo.addTodo(todo);
+            this.refs.todo.value = '';
+        }
     }
 
     render() {
@@ -28,7 +28,7 @@ class TodoPage extends React.Component {
             <div className="home-page">
                 {todo.list.map((item, index) => (
                     <p key={item.id} onClick={this.toggleTodo.bind(this, index)}>
-                        {item.title + " " + (item.complete ? '√' : '×')}
+                        {`${item.title} ${item.complete ? '√' : '×'}`}
                     </p>
                 ))}
                 <p className="add-todo">

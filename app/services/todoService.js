@@ -2,11 +2,9 @@ const todoList = [
     { id: 0, title: 'aaaaaaa', complete: false }
 ];
 
-
 function getTodoList() {
     return todoList;
 }
-
 
 function addTodo(item) {
     const todo = {
