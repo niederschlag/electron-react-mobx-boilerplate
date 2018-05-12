@@ -1,5 +1,9 @@
 # electron-react-mobx-boilerplate
 
+[![Known Vulnerabilities](https://snyk.io/test/github/niederschlag/electron-react-mobx-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/niederschlag/electron-react-mobx-boilerplate?targetFile=package.json)
+[![dependencies Status](https://david-dm.org/niederschlag/electron-react-mobx-boilerplate/status.svg)](https://david-dm.org/niederschlag/electron-react-mobx-boilerplate)
+[![devDependencies Status](https://david-dm.org/niederschlag/electron-react-mobx-boilerplate/dev-status.svg)](https://david-dm.org/niederschlag/electron-react-mobx-boilerplate?type=dev)
+
 ## THIS PROJECT IS WIP
 TODO:
 - [x] Clone project
@@ -11,12 +15,12 @@ TODO:
 - [x] Add Flow
 - [x] Add proper linting
 - [x] Add MobX
-- [ ] Add developer plugins (React, MobX, Devtron)
+- [x] Add developer plugins (React, MobX, Devtron)
 - [ ] Add Jest / Enzyme
 - [x] Add Sass support (and CSS Modules support)
-- [ ] Set-up CI
+- [ ] Set-up CI (Depends on "Add Jest / Enzyme")
 - [ ] Set-up auto dependency update (Greenkeeper / Renovate)
-- [ ] Set-up security management (Snyk)
+- [x] Set-up security management (Snyk)
 - [ ] Set-up code quality management (Codefactor / StyleCI)
 
 A minimal boilerplate to get started with [Electron](http://electron.atom.io/), [React](https://facebook.github.io/react/) and [MobX](https://mobx.js.org/).
