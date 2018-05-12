@@ -17,7 +17,7 @@ TODO:
 - [x] Add MobX
 - [x] Add developer plugins (React, MobX, Devtron)
 - [ ] Add [styled components](https://www.styled-components.com/)
-- [ ] Rearrange project structure
+- [ ] Rearrange project structure (Components, Containers, Stores, Utils, Services(??))
 - [ ] Add Jest + Enzyme
 - [ ] Consider adding mobx-remotedev
 - [ ] Fully [migrate from MobX 3 to 4](https://github.com/mobxjs/mobx/wiki/Migrating-from-mobx-3-to-mobx-4) 
