@@ -16,9 +16,13 @@ TODO:
 - [x] Add proper linting
 - [x] Add MobX
 - [x] Add developer plugins (React, MobX, Devtron)
-- [ ] Add Jest / Enzyme
+- [ ] Add [styled components](https://www.styled-components.com/)
+- [ ] Rearrange project structure
+- [ ] Add Jest + Enzyme
+- [ ] Consider adding mobx-remotedev
+- [ ] Fully [migrate from MobX 3 to 4](https://github.com/mobxjs/mobx/wiki/Migrating-from-mobx-3-to-mobx-4) 
 - [x] Add Sass support (and CSS Modules support)
-- [ ] Set-up CI (Depends on "Add Jest / Enzyme")
+- [ ] Set-up CI (Depends on "Add Jest + Enzyme")
 - [ ] Set-up auto dependency update (Greenkeeper / Renovate)
 - [x] Set-up security management (Snyk)
 - [ ] Set-up code quality management (Codefactor / StyleCI)
