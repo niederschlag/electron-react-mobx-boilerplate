@@ -14,18 +14,25 @@ class TodoPage extends React.Component {
         this.props.todo.toggleTodo(index);
     }
 
+    addTodoEnter(e) {
+	if(e.key === 'Enter') {
+		const todo = this.refs.todo.value;
+		this.props.todo.addTodo(todo);
+		this.refs.todo.value = '';
+	}
+    }
+
     render() {
         const { todo } = this.props;
         return (
             <div className="home-page">
                 {todo.list.map((item, index) => (
                     <p key={item.id} onClick={this.toggleTodo.bind(this, index)}>
-                        {item.title}
-                        {item.complete ? '√' : '×'}
+                        {item.title + " " + (item.complete ? '√' : '×')}
                     </p>
                 ))}
                 <p className="add-todo">
-                    <input type="text" ref="todo" />
+                    <input type="text" ref="todo" onKeyPress={this.addTodoEnter.bind(this)} />
                     <button onClick={this.addTodo.bind(this)}>add</button>
                 </p>
                 <Link to="/">back to main page....</Link>
