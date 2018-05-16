@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import { Provider } from 'mobx-react';
 
-import TodoState from './stores/Todo';
+import TodoState from './states/Todo';
 
-import HomePage from './views/HomePage';
-import TodoPage from './views/TodoPage';
+import HomePage from './containers/HomePage';
+import TodoPage from './containers/TodoPage';
 
 
 const stores = {

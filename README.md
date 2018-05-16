@@ -17,7 +17,8 @@ TODO:
 - [x] Add MobX
 - [x] Add developer plugins (React, MobX, Devtron)
 - [ ] Add [styled components](https://www.styled-components.com/)
-- [ ] Rearrange project structure (Components, Containers, Stores, States, Utils)
+- [ ] Add global scss file
+- [x] Rearrange project structure (Components, Containers, Stores, States, Utils)
 - [ ] Add Jest + Enzyme
 - [x] Fully [migrate from MobX 3 to 4](https://github.com/mobxjs/mobx/wiki/Migrating-from-mobx-3-to-mobx-4) 
 - [x] Add Sass support (and CSS Modules support)

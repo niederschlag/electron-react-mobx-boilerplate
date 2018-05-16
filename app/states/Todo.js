@@ -1,7 +1,7 @@
 import { observable, action, computed } from 'mobx';
 import { remote } from 'electron';
 
-const { todo } = remote.require('./app/services');
+const { todo } = remote.require('./app/stores');
 
 class Todo {
     @observable items = [];
