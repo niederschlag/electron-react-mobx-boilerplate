@@ -4,14 +4,6 @@ import { Link } from 'react-router-dom';
 class HomePage extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
-    }
-
-    componentWillMount() {
-    }
-
-    componentDidMount() {
-
     }
 
     render() {
@@ -25,5 +17,4 @@ class HomePage extends Component {
     }
 }
 
-HomePage.propTypes = {};
 export default HomePage;

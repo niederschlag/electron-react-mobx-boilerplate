@@ -5,20 +5,19 @@ const { todo } = remote.require('./app/services');
 
 class Todo {
     @observable items = [];
-
-    constructor() {
-    }
+    @observable todoText = '';
 
     @computed get list() {
-        this.items = [...todo.getTodoList()];
+        this.items = todo.getTodoList();
         return this.items;
     }
 
-    @action addTodo(title) {
-        this.items.push(todo.addTodo(title));
+    @action.bound addTodo() {
+        this.items.push(todo.addTodo(this.todoText));
+        this.todoText = '';
     }
 
-    @action toggleTodo(index) {
+    @action.bound toggleTodo(index) {
         this.items[index] = todo.toggleTodo(index);
     }
 }

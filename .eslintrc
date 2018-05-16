@@ -39,7 +39,8 @@
 		"react/jsx-filename-extension":	["error", { "extensions": [".js", ".jsx"] }],
 		"react/prefer-stateless-function": "off",
         "react/jsx-indent": [0, 4],
-        "indent": [2, 4]
+        "indent": [2, 4],
+        "linebreak-style": 0
 	},
 	"env": {
 		"es6": true,

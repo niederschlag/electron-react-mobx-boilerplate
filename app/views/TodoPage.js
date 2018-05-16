@@ -4,40 +4,23 @@ import { inject, observer } from 'mobx-react';
 
 @inject('todo') @observer
 class TodoPage extends React.Component {
-    addTodo() {
-        const todo = this.refs.todo.value;
-        this.props.todo.addTodo(todo);
-        this.refs.todo.value = '';
-    }
-
-    toggleTodo(index) {
-        this.props.todo.toggleTodo(index);
-    }
-
-    addTodoEnter(e) {
-        if (e.key === 'Enter') {
-            const todo = this.refs.todo.value;
-            this.props.todo.addTodo(todo);
-            this.refs.todo.value = '';
-        }
-    }
-
     render() {
-        const { todo } = this.props;
+        const { list, toggleTodo, todoText, addTodo } = this.props.todo;
         return (
             <div className="home-page">
-                {todo.list.map((item, index) => (
-                    <p key={item.id} onClick={this.toggleTodo.bind(this, index)}>
+                {list.map((item, index) => (
+                    <p key={item.id} onClick={() => toggleTodo(index)}>
                         {`${item.title} ${item.complete ? '√' : '×'}`}
                     </p>
                 ))}
                 <p className="add-todo">
-                    <input type="text" ref="todo" onKeyPress={this.addTodoEnter.bind(this)} />
-                    <button onClick={this.addTodo.bind(this)}>add</button>
+                    <input type="text" value={todoText} onChange={(e) => { this.props.todo.todoText = e.target.value; }} onKeyDown={(e) => { if (e.key === 'Enter') addTodo(); }} />
+                    <button onClick={addTodo}>add</button>
                 </p>
-                <Link to="/">back to main page....</Link>
+                <Link to="/">Back to main page....</Link>
             </div>
         );
     }
 }
+
 export default TodoPage;

@@ -17,15 +17,17 @@ TODO:
 - [x] Add MobX
 - [x] Add developer plugins (React, MobX, Devtron)
 - [ ] Add [styled components](https://www.styled-components.com/)
-- [ ] Rearrange project structure (Components, Containers, Stores, Utils, Services(??))
+- [ ] Rearrange project structure (Components, Containers, Stores, States, Utils)
 - [ ] Add Jest + Enzyme
-- [ ] Consider adding mobx-remotedev
-- [ ] Fully [migrate from MobX 3 to 4](https://github.com/mobxjs/mobx/wiki/Migrating-from-mobx-3-to-mobx-4) 
+- [x] Fully [migrate from MobX 3 to 4](https://github.com/mobxjs/mobx/wiki/Migrating-from-mobx-3-to-mobx-4) 
 - [x] Add Sass support (and CSS Modules support)
 - [ ] Set-up CI (Depends on "Add Jest + Enzyme")
 - [ ] Set-up auto dependency update (Greenkeeper / Renovate)
 - [x] Set-up security management (Snyk)
+
+Nice to have:
 - [ ] Set-up code quality management (Codefactor / StyleCI)
+- [ ] Consider adding mobx-remotedev
 
 A minimal boilerplate to get started with [Electron](http://electron.atom.io/), [React](https://facebook.github.io/react/) and [MobX](https://mobx.js.org/).
 
