@@ -19,11 +19,11 @@ TODO:
 - [x] Add [styled components](https://www.styled-components.com/)
 - [x] Add global scss file
 - [x] Rearrange project structure (Components, Containers, Stores, States, Utils)
-- [ ] Add Jest + Enzyme
+- [x] Add Jest + Enzyme
 - [x] Fully [migrate from MobX 3 to 4](https://github.com/mobxjs/mobx/wiki/Migrating-from-mobx-3-to-mobx-4) 
 - [x] Add Sass support (and CSS Modules support)
-- [ ] Set-up CI (Depends on "Add Jest + Enzyme")
-- [ ] Set-up auto dependency update (Greenkeeper / Renovate)
+- [x] Set-up CI (Depends on "Add Jest + Enzyme")
+- [ ] Set-up auto dependency update (Greenkeeper / Renovate) (Depends on "Set-up CI")
 - [x] Set-up security management (Snyk)
 
 A minimal boilerplate to get started with [Electron](http://electron.atom.io/), [React](https://facebook.github.io/react/) and [MobX](https://mobx.js.org/).
