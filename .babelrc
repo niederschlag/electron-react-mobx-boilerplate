@@ -1,12 +1,15 @@
 {
-  "presets": [ "env", "stage-3", "react" ],
-  "plugins": [ "transform-decorators-legacy", "transform-class-properties", "transform-runtime", "transform-flow-strip-types" ],
-  "env": {
-    "production": {
-      "plugins": [ "styled-components" ]
-    },
-    "development": {
-      "plugins": [ "styled-components", "react-hot-loader/babel" ]
+    "presets": [ "env", "stage-3", "react" ],
+    "plugins": [ "transform-decorators-legacy", "transform-class-properties", "transform-runtime", "transform-flow-strip-types" ],
+    "env": {
+        "production": {
+            "plugins": [ "styled-components" ]
+        },
+        "test": {
+            "plugins": [ "styled-components" ]
+        },
+        "development": {
+            "plugins": [ "styled-components", "react-hot-loader/babel" ]
+        }
     }
-  }
 }
