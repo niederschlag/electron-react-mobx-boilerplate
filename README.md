@@ -4,7 +4,9 @@
 [![dependencies Status](https://david-dm.org/niederschlag/electron-react-mobx-boilerplate/status.svg)](https://david-dm.org/niederschlag/electron-react-mobx-boilerplate)
 [![devDependencies Status](https://david-dm.org/niederschlag/electron-react-mobx-boilerplate/dev-status.svg)](https://david-dm.org/niederschlag/electron-react-mobx-boilerplate?type=dev)
 [![Build Status](https://travis-ci.com/niederschlag/electron-react-mobx-boilerplate.svg?branch=master)](https://travis-ci.com/niederschlag/electron-react-mobx-boilerplate)
-[![Greenkeeper badge](https://badges.greenkeeper.io/niederschlag/electron-react-mobx-boilerplate.svg)](https://greenkeeper.io/)
+[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovateapp.com/)
+
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
 
 A minimal boilerplate to get started with [Electron](http://electron.atom.io/), [React](https://facebook.github.io/react/) and [MobX](https://mobx.js.org/).
 
