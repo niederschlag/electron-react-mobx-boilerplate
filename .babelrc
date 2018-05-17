@@ -3,10 +3,10 @@
   "plugins": [ "transform-decorators-legacy", "transform-class-properties", "transform-runtime", "transform-flow-strip-types" ],
   "env": {
     "production": {
-      "plugins": [ ]
+      "plugins": [ "styled-components" ]
     },
     "development": {
-      "plugins": [ "react-hot-loader/babel" ]
+      "plugins": [ "styled-components", "react-hot-loader/babel" ]
     }
   }
 }

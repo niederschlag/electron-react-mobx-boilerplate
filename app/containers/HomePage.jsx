@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class HomePage extends Component {
+export default class HomePage extends Component {
     render() {
         return (
             <div className="">
-                This is the home page...
-                <br />
-                <Link to="/todo">Todo</Link>
+                <p>This is the home page... <br /><Link to="/todo">Todo</Link></p>
             </div>
         );
     }
 }
-
-export default HomePage;

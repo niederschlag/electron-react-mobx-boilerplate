@@ -9,15 +9,15 @@ TODO:
 - [x] Clone project
 - [x] Tear everything apart
 - [x] Tear Redux out
-- [ ] Again, check through all files and tear everything unnecessary out
+- [x] Again, check through all files and tear everything unnecessary out
 - [x] Add Webpack
 - [x] Add React hot reloading
 - [x] Add Flow
 - [x] Add proper linting
 - [x] Add MobX
 - [x] Add developer plugins (React, MobX, Devtron)
-- [ ] Add [styled components](https://www.styled-components.com/)
-- [ ] Add global scss file
+- [x] Add [styled components](https://www.styled-components.com/)
+- [x] Add global scss file
 - [x] Rearrange project structure (Components, Containers, Stores, States, Utils)
 - [ ] Add Jest + Enzyme
 - [x] Fully [migrate from MobX 3 to 4](https://github.com/mobxjs/mobx/wiki/Migrating-from-mobx-3-to-mobx-4) 

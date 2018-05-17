@@ -1,25 +1,52 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
+import { default as styled, keyframes } from 'styled-components';
+
+const ListStyle = styled.p`
+    font-size: 1.5em;
+    text-align: center;
+    color: palevioletred;
+`;
+
+const Input = styled.input`
+    background: white;
+    color: palevioletred;
+    
+    font-size: 1em;
+    margin: 0.25em;
+    padding: 0.25em 1em;
+    border: 2px solid palevioletred;
+    border-radius: 3px;
+`;
+
+const Button = styled.button`
+    background: palevioletred;
+    color: white;
+    
+    font-size: 1em;
+    margin: 0.25em;
+    padding: 0.25em 1em;
+    border: 2px solid palevioletred;
+    border-radius: 3px;
+`;
 
 @inject('todo')
 @observer
-class TodoList extends React.Component {
+export default class TodoList extends React.Component {
     render() {
         const { list, toggleTodo, todoText, addTodo } = this.props.todo;
         return (
             <div>
                 {list.map((item, index) => (
-                    <p key={item.id} onClick={() => toggleTodo(index)}>
-                        {`${item.title} ${item.complete ? '√' : '×'}`}
-                    </p>
+                    <ListStyle key={item.id} onClick={() => toggleTodo(index)}>
+                        {`${item.title} ${item.complete ? '✅' : '❌'}`}
+                    </ListStyle>
                 ))}
                 <p className="add-todo">
-                    <input type="text" value={todoText} onChange={(e) => { this.props.todo.todoText = e.target.value; }} onKeyDown={(e) => { if (e.key === 'Enter') addTodo(); }} />
-                    <button onClick={addTodo}>add</button>
+                    <Input type="text" value={todoText} onChange={(e) => { this.props.todo.todoText = e.target.value; }} onKeyDown={(e) => { if (e.key === 'Enter') addTodo(); }} />
+                    <Button onClick={addTodo}>add</Button>
                 </p>
             </div>
         );
     }
 }
-
-export default TodoList;
