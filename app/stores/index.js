@@ -1,4 +1,4 @@
-const todo = require('./todoService');
+const todo = require('./todoStore');
 
 module.exports = {
     todo

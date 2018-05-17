@@ -21,8 +21,14 @@ function toggleTodo(index) {
     return todoList[index];
 }
 
+function deleteTodo(index) {
+    todoList.splice(index, 1);
+    return index;
+}
+
 module.exports = {
     getTodoList,
     addTodo,
-    toggleTodo
+    toggleTodo,
+    deleteTodo
 };

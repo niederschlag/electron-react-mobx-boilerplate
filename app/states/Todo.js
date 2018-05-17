@@ -20,5 +20,9 @@ class Todo {
     @action.bound toggleTodo(index) {
         this.items[index] = todo.toggleTodo(index);
     }
+
+    @action.bound deleteTodo(index) {
+        this.items.splice(todo.deleteTodo(index), 1);
+    }
 }
 export default Todo;

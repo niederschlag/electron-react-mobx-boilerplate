@@ -26,17 +26,17 @@ TODO:
 - [ ] Set-up auto dependency update (Greenkeeper / Renovate)
 - [x] Set-up security management (Snyk)
 
-Nice to have:
-- [ ] Set-up code quality management (Codefactor / StyleCI)
-- [ ] Consider adding mobx-remotedev
-
 A minimal boilerplate to get started with [Electron](http://electron.atom.io/), [React](https://facebook.github.io/react/) and [MobX](https://mobx.js.org/).
 
-//TODO: Tear apart
 Including:
-
 * [Electron Packager](https://github.com/electron-userland/electron-packager)
 * [Electron DevTools Installer](https://github.com/MarshallOfSound/electron-devtools-installer)
+* [Devtron](https://github.com/electron/devtron)
+* [Babel](https://babeljs.io/)
+* [Webpack](https://webpack.js.org/)
+* [ESLint](https://eslint.org/) (with [Airbnb's style guide](https://github.com/airbnb/javascript))
+* [Styled Components](https://www.styled-components.com/)
+* [Flow](https://flow.org/)
 
 ## Quick start
 
@@ -80,3 +80,7 @@ yarn build
 ```
 yarn test
 ```
+
+## Stuff which is nice to have
+- [ ] Code quality management (Codefactor / StyleCI)
+- [ ] Consider adding mobx-remotedev
