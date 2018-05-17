@@ -1,5 +1,7 @@
 # electron-react-mobx-boilerplate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/niederschlag/electron-react-mobx-boilerplate.svg)](https://greenkeeper.io/)
+
 [![Known Vulnerabilities](https://snyk.io/test/github/niederschlag/electron-react-mobx-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/niederschlag/electron-react-mobx-boilerplate?targetFile=package.json)
 [![dependencies Status](https://david-dm.org/niederschlag/electron-react-mobx-boilerplate/status.svg)](https://david-dm.org/niederschlag/electron-react-mobx-boilerplate)
 [![devDependencies Status](https://david-dm.org/niederschlag/electron-react-mobx-boilerplate/dev-status.svg)](https://david-dm.org/niederschlag/electron-react-mobx-boilerplate?type=dev)
