@@ -19,6 +19,8 @@ Including:
 * [ESLint](https://eslint.org/) (with [Airbnb's style guide](https://github.com/airbnb/javascript))
 * [Styled Components](https://www.styled-components.com/)
 * [Flow](https://flow.org/)
+* [Jest](https://facebook.github.io/jest/)
+* [Enzyme](http://airbnb.io/enzyme/)
 
 ## Quick start
 
