@@ -78,7 +78,7 @@
         "mobx-react": "5.1.2",
         "react": "16.4.0",
         "react-dom": "16.4.0",
-        "react-hot-loader": "4.2.0",
+        "react-hot-loader": "4.8.0",
         "react-router": "4.2.0",
         "react-router-dom": "4.2.2",
         "rimraf": "2.6.2",
